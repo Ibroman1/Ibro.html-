@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ibro</title>
+</head>
+ <style>
+  .center{
+    background: red ;
+    position: absolute ;
+    padding: 30px ;
+    margin-left: 20px ;
+    top: 100px;
+    border-radius: 50px ;
+  }
+  .center , form{
+    background:  #00896984;
+    border-radius: 20px ;
+  }
+  input{
+    padding: 10px ;
+    width: 70px ;
+    outline: 0;
+    border: 0;
+    height: 70px ;
+    font-size: 27px ;
+    font-weight: bold;
+    position: relative;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 10px rgba(0,0,0,0.2);
+    background: fixed;
+    cursor: pointer;
+    border-radius: 20px ;
+    color: #fff;
+    margin: 1px;
+  }
+  #dd{
+    padding: 30px;
+    border-radius:10px ;
+    width: 230px;
+    height: 130px ;
+  }
+  pp{
+    position: relative ;
+    left: 34px ;
+    bottom: 30px ;
+  }
+ </style>
+<body>
+    <div class="center">
+       <div>
+         <form>
+           <center>
+           <div class="display">
+             <input type="text" name="display" id="dd">
+             <div>
+               <input type="button" value="c" onclick="display.value =''">
+                <input type="button" value="DE" onclick="display.value = display.value.toString().scile (0,~1)">
+                 <input type="button" value="%" onclick="display.value +='%'">
+                  <input type="button" value="/" onclick="display.value +='/'">
+             </div>
+                <div>
+                   <input type="button" value="7" onclick="display.value +='7'">
+                    <input type="button" value="8" onclick="display.value +='8'">
+                     <input type="button" value="9" onclick="display.value +='9'">
+                      <input type="button" value="*" onclick="display.value +='*'">
+                </div>
+                    <div>
+                       <input type="button" value="4" onclick="display.value +='4'">
+                        <input type="button" value="5" onclick="display.value +='5'">
+                         <input type="button" value="6" onclick="display.value +='6'">
+                          <input type="button" value="-" onclick="display.value +='-'">
+                    </div>
+                     <div>
+                        <input type="button" value="1" onclick="display.value +='1'">
+                         <input type="button" value="2" onclick="display.value +='2'">
+                          <input type="button" value="3" onclick="display.value +='3'">
+                           <input type="button" value="+" onclick="display.value +='+'">
+                     </div>
+                     <div>
+                                <input type="button" value="+/-" onclick="display.value +='+/-'">
+                                         <input type="button" value="0" onclick="display.value +='0'">
+                                                  <input type="button" value="." onclick="display.value +='.'">
+                                                           <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
+                     </div>
+                     
+         </form>
+       </div>
+    </div>
+</body>
+</html>
